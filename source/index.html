@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Smart device</title>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <!--<link rel="preload" href="./fonts/PTMono-Regular.woff" as="font" />
+    <link rel="preload" href="./fonts/PTMono-Regular.woff2" as="font" />
+     <link href = "https://fonts.googleapis.com/css2? family = PT + Mono & display = swap" rel = "таблица стилей">
+    <link href = "https://fonts.googleapis.com/css2? family = Roboto + Condensed: wght @ 400; 700 & display = swap "rel =" stylesheet ">-->
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__wrapper container">
+            <a class="page-header__logo">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/logo-header-mob.svg">
+                    <source media="(max-width: 1024px)" srcset="img/logo-header.svg">
+                    <img class="page-header__logo-image" src="img/logo-header.svg" width="202" height="51"
+                        alt="Логотип Смарт дивайс">
+                </picture>
+            </a>
+            <nav class="main-nav">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list list-reset">
+                        <li class="site-list__active"><a href="#"><svg class="site-list__mail" width="19" height="14">
+                                    <use xlink:href="./img/sprite.svg#email"></use>
+                                </svg><span>info@sd.ru</span></a>
+                        </li>
+                        <li><a href="#"><svg class="site-list__phone" width="18" height="18">
+                                    <use xlink:href="./img/sprite.svg#phone"></use>
+                                </svg><span>+7 (495) 000 52 52</span></a></li>
+                        <li><a href="#"><span class="site-list__button title">Заказать звонок</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="trip-top">
+            <div class="trip-top__wrap">
+            <div class="trip-top__container">
+                <h1 class="title">Печатные платы</h1>
+                <div class="trip-top__block">
+                    <p>производство и монтаж, поставка<br>&nbsp;комплектующих, блоков и модулей</p>
+                </div>
+                <a href="#" class="trip-top__button button-one title">Получить бесплатную консультацию</a>
+                <a href="#" class="trip-top__button button-two title">Бесплатная консультация</a>
+            </div>
+        </div>
+        </section>
+        <section class="advantages">
+            <ul class="advantages__list list-reset">
+                <li>
+                    <a href="#">
+                        <svg class="advantages__img img-time">
+                            <use xlink:href="./img/sprite.svg#time"></use>
+                        </svg>
+                        <h3 class="title">Оперативные сроки</h3>
+                        <p>Усовершенствованная логистическая система позволяет
+                            нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих
+                            в самые короткие сроки</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="advantages__img img-provider">
+                            <use xlink:href="./img/sprite.svg#provider"></use>
+                        </svg>
+                        <h3 class="title">Крупные поставщики</h3>
+                        <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC,
+                            REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="advantages__img img-security" width="36" height="31">
+                            <use xlink:href="./img/sprite.svg#security"></use>
+                        </svg>
+                        <h3 class="title">Полная конфиденциальность</h3>
+                        <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="advantages__img img-cost" width="35" height="35">
+                            <use xlink:href="./img/sprite.svg#cost"></use>
+                        </svg>
+                        <h3 class="title">Персонализация стоимости</h3>
+                        <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену,
+                            которая
+                            Вас устраивает.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="company">
+            <div class="company__wrap">
+                <div class="company__img">
+                    <picture>
+                        <!--  <source type="image/webp" media="(max-width: 1024px)"
+                        srcset="./img/webp/penguin-tablet.webp 1x, ./img/webp/penguin-tablet2.webp 2x">
+                  <source type="image/webp"
+                        srcset="./img/webp/penguin-desk.webp 1x, ./img/webp/penguin-desk2.webp 2x">-->
+                        <!-- 1х: 362px; 2x: 724px -->
+                        <source media="(max-width: 1024px)"
+                            srcset="./img/year-tablet.png  1x, ./img/year-tablet2.png  2x">
+                        <!-- 1х: 117px; 2x: 302px -->
+                        <img class="company__image" src="./img/year-desk.png" srcset="./img/year-desk2.png  2x"
+                            alt="две тысячи пять" width="117" height="302">
+                    </picture>
+                </div>
+                <div class="company__right">
+                    <h3 class="title">О компании</h3>
+                    <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
+                        технологии
+                        с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+                    </p>
+                    <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
+                        REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+                        Железных Дорог<span class="points">..</span><span class="part">(РЖД), РоссАвтоПрома (ВАЗ,
+                            АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших
+                            клиентов крупнейшие Производители светотехники России.</span>
+                    </p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="service__container container">
+                <h2 class="title">Service Device предлагает следующие товары и услуги</h2>
+                <ul class="service__list list-reset">
+                    <li>
+                        <a href="#" class="service__link-item">
+                            <p class="text">Производство печатных
+                                плат</p>
+                            <picture>
+                                <source type="image/webp" media="(max-width: 768px)"
+                                    srcset="./img/webp/slider-one-mobile.webp  1x, ./img/webp/slider-one-mobile2.webp  2x">
+                                <source type="image/webp" media="(max-width: 1024px)"
+                                    srcset="./img/webp/slider-one-tablet.webp 1x, ./img/webp/slider-one-tablet2.webp 2x">
+                                <source type="image/webp"
+                                    srcset="./img/webp/slider-one-desk.webp 1x, ./img/webp/slider-one-desk2.webp 2x">
+                                <!-- 1х: 290px; 2x: 580px -->
+                                <source media="(max-width: 768px)"
+                                    srcset="./img/slider-one-mobile.jpg  1x, ./img/slider-one-mobile2.jpg  2x">
+                                <!-- 1х: 720px; 2x: 1440px -->
+                                <source media="(max-width: 1024px)"
+                                    srcset="./img/slider-one-tablet.jpg  1x, ./img/slider-one-tablet2.jpg 2x">
+                                <!-- 1х: 320px; 2x: 640px -->
+                                <img class="service__img img-one" src="./img/slider-one-desk.jpg"
+                                    srcset="./img/slider-one-desk2.jpg  2x" alt="Производство печатных
+                                плат" width="370" height="620">
+                            </picture>
+                        </a>
+                        <a href="#" class="service__link"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="service__link-item">
+                            <p class="text">Монтаж печатных плат</p>
+                            <picture>
+                                <source type="image/webp" media="(max-width: 768px)"
+                                    srcset="./img/webp/slider-two-mobile.webp  1x, ./img/webp/slider-two-mobile2.webp  2x">
+                                <source type="image/webp" media="(max-width: 1024px)"
+                                    srcset="./img/webp/slider-two-tablet.webp 1x, ./img/webp/slider-two-tablet2.webp 2x">
+                                <source type="image/webp"
+                                    srcset="./img/webp/slider-two-desk.webp 1x, ./img/webp/slider-two-desk2.webp 2x">
+                                <!-- 1х: 290px; 2x: 580px -->
+                                <source media="(max-width: 768px)"
+                                    srcset="./img/slider-two-mobile.jpg  1x, ./img/slider-two-mobile2.jpg  2x">
+                                <!-- 1х: 720px; 2x: 1440px -->
+                                <source media="(max-width: 1024px)"
+                                    srcset="./img/slider-two-tablet.jpg  1x, ./img/slider-two-tablet2.jpg 2x">
+                                <!-- 1х: 320px; 2x: 640px -->
+                                <img class="service__img img-one" src="./img/slider-two-desk.jpg"
+                                    srcset="./img/slider-two-desk2.jpg  2x" alt="Монтаж печатных плат" width="370"
+                                    height="620">
+                            </picture>
+                        </a>
+                        <a href="#" class="service__link"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="service__link-item">
+                            <p class="text">Комплектующие для светотехники</p>
+                            <picture>
+                                <source type="image/webp" media="(max-width: 768px)"
+                                    srcset="./img/webp/slider-three-mobile.webp  1x, ./img/webp/slider-three-mobile2.webp  2x">
+                                <source type="image/webp" media="(max-width: 1024px)"
+                                    srcset="./img/webp/slider-three-tablet.webp 1x, ./img/webp/slider-three-tablet2.webp 2x">
+                                <source type="image/webp"
+                                    srcset="./img/webp/slider-three-desk.webp 1x, ./img/webp/slider-three-desk2.webp 2x">
+                                <!-- 1х: 290px; 2x: 580px -->
+                                <source media="(max-width: 768px)"
+                                    srcset="./img/slider-three-mobile.jpg  1x, ./img/slider-three-mobile2.jpg  2x">
+                                <!-- 1х: 720px; 2x: 1440px -->
+                                <source media="(max-width: 1024px)"
+                                    srcset="./img/slider-three-tablet.jpg  1x, ./img/slider-three-tablet2.jpg 2x">
+                                <!-- 1х: 320px; 2x: 640px -->
+                                <img class="service__img img-one" src="./img/slider-three-desk.jpg"
+                                    srcset="./img/slider-three-desk2.jpg  2x" alt="Комплектующие 
+                        для светотехники" width="370" height="620">
+                            </picture>
+                        </a>
+                        <a href="#" class="service__link"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="form">
+         <div class="form__container">
+          <div class="form__popup">
+                    <form action="https://echo.htmlacademy.ru" method="post" id="form" class="form__body">
+                        <h3 class="title">Остались вопросы? Задайте их нам!</h3>
+                        <p>Мы проконсультируем Вас бесплатно</p>
+                        <div class="form__wrap">
+                            <div class="form__item">
+                                <label for="formName" class="visually-hidden"><span>Имя</span></label>
+                                <input id="formName" type="text" name="name" placeholder="Имя" class="req">
+                            </div>
+                            <div class="form__item">
+                                <label for="formPhone" class="visually-hidden"><span>Телефон</span></label>
+                                <input id="formPhone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{5}" name="phone"
+                                    placeholder="Телефон" class="_req">
+                            </div>
+                        </div>
+                        <textarea id="evidence-letter" class="form__text" name="text"
+                            placeholder="Ваш вопрос"></textarea>
+                        <div class="form__bottom">
+                            <button class="button title">Задать вопрос</button>
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement"
+                                    class="visually-hidden req">
+                                <label for="formAgreement"><span>Я согласен на обработку персональных
+                                        данных</span></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrap">
+            <div class="page-footer__top">
+                <div class="page-footer__left">
+                    <a class="page-footer__logo" href="#">
+                        <img class="page-footer__social-logo" src="img/logo-footer.svg" width="70" height="38"
+                            alt="Логотип сайта смарт дивайс">
+                    </a>
+                    <p>1999-2018 SD Service Devices</p>
+                    <ul class="icon-social list-reset">
+                        <li>
+                            <a href="#"><span class="visually-hidden">Фейсбук</span>
+                                <svg class="social-button-icon button-fb" width="27" height="27">
+                                    <use xlink:href="./img/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="visually-hidden">Одноклассники</span>
+                                <svg class="social-button-icon button-od" width="27" height="27">
+                                    <use xlink:href="./img/sprite.svg#od"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="visually-hidden">ВКонтакте</span>
+                                <svg class="social-button-icon button-vk" width="27" height="27">
+                                    <use xlink:href="./img/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__right">
+                    <div class="page-footer__service">
+                        <div class="page-footer__one container">
+                            <h2 class="title">Разделы сайта</h2>
+                            <ul class="list-reset">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Продукты</a></li>
+                                <li><a href="#">Производство печатных плат</a></li>
+                                <li><a href="#">Монтаж печатных плат</a></li>
+                            </ul>
+                        </div>
+                        <ul class="list-reset page-footer__two">
+                            <li><a href="#">Комплектующие</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="office">
+                        <h2 class="title">Наш офис</h2>
+                        <ul class="list-reset">
+                            <li><a href="#">г. Мытищи, Олимпийский проспект, д.10</a></li>
+                            <li><a href="tel:7-495-589-40-50">+7 (495) 589-40-50</a></li>
+                            <li><a href="tel:7-925-003-87-67">+7 (925) 003-87-67</a></li>
+                            <li><a href="tel:7-926-926-080-79">+7 (926) 926-080-79</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="page-footer__bottom list-reset">
+                <li><a href="#" class="page-footer__bottom--option">Все права защищены</a></li>
+                <li><a href="#" class="page-footer__bottom--option">1999-2018 SD Service Devices</a></li>
+                <li><a href="#">Условия конфиденциальности</a></li>
+                <li><a href="#">Developed by wow studio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/vendor/picturefill.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/form.min.js"></script>
+</body>
+
+</html>

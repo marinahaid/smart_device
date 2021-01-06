@@ -1,0 +1,163 @@
+.contact {
+  width: 100%;
+  margin-top: 121px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__right {
+  width: 43%;
+  margin-top: 56px;
+}
+
+.contact__right p {
+  width: 100%;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.contact__address p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color;
+}
+
+.contact__address br {
+  display: none;
+}
+
+.contact__block li {
+  display: flex;
+  align-items: center;
+}
+
+.contact__block a {
+  color: $color;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.contact__map {
+  width: 48%;
+}
+
+.contact__map iframe {
+  width: 100%;
+  border: none;
+}
+
+.link-icon-phone {
+  fill: $color;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contact {
+    margin-top: 100px;
+  }
+
+  .contact__right {
+    width: 48%;
+    margin-top: 48px;
+  }
+
+  .contact__map iframe {
+    width: 324px;
+    min-height: 335px;
+  }
+
+  .contact__item {
+    padding-bottom: 16px;
+  }
+
+  .contact__text {
+    margin-bottom: 30px;
+  }
+
+  .contact__address p {
+    margin: 0;
+  }
+
+  .contact__address br {
+    display: block;
+  }
+
+  .contact__block {
+    padding-top: 11px;
+  }
+
+  .contact__block li {
+    align-items: inherit;
+  }
+
+  .contact__block a {
+    align-self: flex-start;
+    padding-right: 5px;
+  }
+
+  .link-icon-phone:hover {
+    opacity: 0.3;
+  }
+
+  .contact__address {
+    padding-bottom: 21px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact {
+    margin-top: 40px;
+  }
+
+  .contact__container {
+    flex-direction: column;
+  }
+
+  .contact__map {
+    width: 100%;
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .contact__right {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contact__map iframe {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 316px;
+  }
+
+  .contact__address {
+    padding-bottom: 0;
+  }
+
+  .contact__block {
+    padding: 11px 0 5px 0;
+  }
+
+  .contact__block p,
+  .contact__block a {
+    padding-left: 0;
+  }
+
+  .contact__block li {
+    padding-bottom: 23px;
+  }
+}

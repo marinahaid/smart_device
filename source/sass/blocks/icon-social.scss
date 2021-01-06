@@ -1,0 +1,45 @@
+.icon-social {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-button-icon {
+  color: $color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .icon-social {
+    width: 112px;
+  }
+
+ /* .button-fb {
+    width: 27px;
+    height: 27px;
+  }
+
+  .button-insta {
+    width: 27px;
+    height: 27px;
+  }
+
+  .button-twitter {
+    width: 16px;
+    height: 13px;
+  }*/
+}
+
+@media (max-width: $mobile-width) {
+.icon-social {
+      padding: 32px 0 48px 0;
+      margin: 0 auto;
+  }
+}

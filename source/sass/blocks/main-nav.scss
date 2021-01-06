@@ -1,0 +1,23 @@
+.main-nav {
+  padding-top: 26px;
+  position: relative;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav {
+    padding-top: 0;
+  }
+
+  .main-nav__list {
+    padding-top: 9px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+}
