@@ -1,9 +1,10 @@
 .site-list a {
   display: block;
   font-family: $font-family;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 400;
   color: $color-text;
+  letter-spacing: 0.05em;
 
   &:focus,
   &:hover {
@@ -17,37 +18,39 @@
 
 .site-list li {
   padding-top: 20px;
-  margin-left: 76px;
+  margin-left: 78px;
 }
 
 .site-list span {
-  margin-left: 25px;
+  margin-left: 18px;
 }
 
 .site-list__button {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 700;
+  font-family: 'Roboto Condensed', "Arial", sans-serif;
   text-transform: uppercase;
   border: 1px solid $color-text;
   padding: 14px;
   border-radius: 5px;
   box-sizing: border-box;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: $tablet-width) {
   .site-list li {
-    margin-left: 24px;
+    margin-left: 0;
   }
 
-  .site-list span {
+.site-list span {
     display: none;
   }
 
-  .site-list__mail {
+.site-list__mail {
     width: 25px;
     height: 19px;
-    margin-right: 22px;
+   margin-right: 31px;
   }
 
   .site-list__phone {

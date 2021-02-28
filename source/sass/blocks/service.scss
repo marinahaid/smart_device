@@ -2,16 +2,18 @@
   width: 100%;
   margin-top: 100px;
   background-color: $background-color;
-  padding-bottom: 122px;
+  padding-bottom: 123px;
 }
 
 .service__list {
-  width: 100%;
-  margin: 0 auto;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  overflow-x: hidden;
+}
+
+.service__container {
+  margin: 0 auto;
 }
 
 .service__container h2 {
@@ -21,6 +23,12 @@
   max-width: 880px;
   color: $color-text;
   padding-top: 93px;
+}
+
+.service__wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .service__list li {
@@ -34,7 +42,8 @@
 .service__list p {
   font-size: 20px;
   line-height: 30px;
-  max-width: 174px;
+  max-width: 170px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   color: $color-text;
   position: absolute;
   z-index: 2;
@@ -42,15 +51,24 @@
   left: 44px;
 }
 
-.place__img {
+.service__img {
   width: 100%;
+  display: block;
+}
+
+.service__link {
   display: block;
   position: relative;
 }
 
-.service__link {
+.service__link::before {
+  content: "";
   background-color: $color-blue;
   position: absolute;
+  z-index: -1;
+}
+//background-color: $color-blue;
+/* position: relative;
   width: 8px;
   height: 4px;
   display: block;
@@ -59,12 +77,20 @@
   background-size: cover;
   background-position: center;
   transform: rotate(-90deg);
+  // color: $color-text;
+ // z-index: 3;
+  // box-shadow: 0 0 0 28px $color-blue;
+  // bottom: 34px;
+  // right: 27px;
+}
+
+/*.service__link::before {
   position: absolute;
-  color: $color-text;
-  z-index: 3;
-  box-shadow: 0 0 0 29px $color-blue;
-  bottom: 34px;
-  right: 27px;
+  background-color: $color-blue;
+
+  width: 50px;
+  height: 50px;
+  z-index: -1;
 
   &:hover,
   &:focus,
@@ -72,7 +98,7 @@
     // transition: background-color 0.5s ease 0s;
     opacity: 0.1;
   }
-}
+}*/
 
 .service__link-item {
   display: block;
@@ -81,6 +107,17 @@
   &:focus,
   &:active {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: $desk-width-only-min) {
+  .service__container {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .service__list li {
+    width: 300px;
   }
 }
 

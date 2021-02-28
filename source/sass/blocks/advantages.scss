@@ -1,13 +1,14 @@
 .advantages {
-  padding-bottom: 75px;
   width: 100%;
-  margin: 21px auto 0;
+  margin: 112px auto 68px;
+}
+
+.advantages__wrap {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .advantages__list {
-  width: 100%;
-  max-width: 1920px;
-  padding: 0 375px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -17,31 +18,23 @@
 
 .advantages__list li {
   background-color: $color-text;
-  width: 570px;
-  // min-height: 299px;
+  width: 48%;
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   border: 1px solid #ebebeb;
   box-shadow: -2px 0 0 0 $color-blue;
   box-sizing: border-box;
-  padding: 37px 15px 56px 44px;
   border-left: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $color-blue;
-  }
+  //background-color: red;
+  // flex: 0 1 49%;
 }
 
 .advantages__list a {
-  display: block;
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $color-blue;
-    color: #ffffff;
-  }
+  //display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  color: $color-blue;
+  padding: 37px 40px 52px 45px;
 }
 
 .advantages__list h3 {
@@ -49,34 +42,18 @@
   line-height: 17.75px;
   color: $color-blue;
   font-weight: 400;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color-text !important;
-  }
+  margin: 0;
+  padding: 30px 0 10px 0;
 }
 
- .advantages__list p {
+.advantages__list p {
   line-height: 21.5px;
-  text-align: left;
   color: $color;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color-text !important;
-  }
+  flex: 1 1 auto;
 }
 
 a .advantages__img {
   fill: $color-blue;
-
-  &:hover,
-  &:focus,
-  &:active {
-    fill: $color-text !important;
-  }
 }
 
 .img-time {
@@ -95,23 +72,25 @@ a .advantages__img {
   height: 31px;
 }
 
+@media (max-width: $desk-width-only-min) {
+  .advantages {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .advantages {
-    margin-top: -139px;
-    padding-bottom: 99px;
+  }
+
+  .advantages__list {
+    max-width: 100%;
   }
 
   .advantages__list li {
-    background-color: $color-text;
-    width: 345px;
-    // min-height: 307px;
-    margin-top: 30px;
-    padding: 21px 20px 0px 26px;
   }
 
-  .advantages__list li:nth-child(3),
-  .advantages__list li:nth-child(4) {
-    //min-height: 232px;
+  .advantages__list a {
   }
 
   .advantages__list h3 {

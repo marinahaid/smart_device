@@ -1,14 +1,11 @@
 .company {
   width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+ margin: 0 auto;
   }
 
 .company__wrap {
-  width: 100%;
-  padding-right: 381px;
-  padding-left: 375px;
-  display: flex;
+margin: 0 auto;
+display: flex;
   justify-content: space-between;
 
 }
@@ -42,11 +39,19 @@
   border-radius: 5px;
   box-sizing: border-box;
   padding: 14px 0;
-  margin-top: 62px;
+  margin-top: 40px;
 }
 
 .points {
   display: none;
+}
+
+
+@media (max-width: $desk-width-only-min) {
+  .company {
+    width: 100%;
+    max-width: 1000px;
+  }
 }
 
 @media (max-width: $tablet-width) {

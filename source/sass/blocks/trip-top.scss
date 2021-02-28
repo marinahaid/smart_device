@@ -1,101 +1,71 @@
 .trip-top {
   width: 100%;
-  position: relative;
-  margin: 0 auto;
-  top: -70px;
-  min-height: 876px;
+  margin-top: -87px;
+  min-height: 877px;
   background-color: $background-color;
   background-image: url("../img/font-desk.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  left: 0;
   display: block;
-  z-index: -1;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/font-desk2.png");
-    background-size: cover;
-  }
+  position: relative;
+  z-index: -2;
 }
 
 .trip-top__wrap {
   width: 100%;
-  max-width: 1920px;
-  padding-left: 249px;
-  padding-right: 177x;
   margin: 0 auto;
-position: relative;
 }
 
-.trip-top__container::after {
+.trip-top::before {
   content: "";
-  display: block;
   position: absolute;
-  width: 843px;
-  min-height: 690px;
-  background-image: url(../img/card-desk.png);
-  top: 93px;
+  width: 819px;
+  min-height: 714px;
+  background-image: url("../img/card-desk.png");
   left: 50%;
-  //transform: translateX(180px);
-  background-repeat: no-repeat;
+  top: 98px;
+  -webkit-transform: translateX(-42px);
+  transform: translateX(-42px);
   background-size: cover;
+  z-index: 2;
+  position: top center;
   background-position: top center;
-  z-index: -1;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-     background-image: url("../img/card-desk2.png");
+    background-image: url("../img/card-desk2.png");
     background-size: cover;
   }
 }
 
-.trip-top__container {
-  width: 49%;
-
-  //transform: translateX(249px);
-  padding-top: 312px;
+.trip-top__column {
+  width: 60%;
+  padding-left: 250px;
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+  top: 232px;
 }
 
-
-
-.trip-top__container h1 {
-  width: 100%;
-  margin: 0;
+.trip-top h1 {
+  max-width: 720px;
   font-size: 80px;
-  line-height: 94px;
-  font-weight: 700;
-  color: $color-text;
+  line-height: 93px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  padding-left: 100px;
+  padding-top: 18px;
+  margin-bottom: 27px;
 }
 
-.trip-top__container p {
-  width: 100%;
+.trip-top p {
+  max-width: 720px;
   font-size: 22px;
   line-height: 34.5px;
-  color: $color-text;
+  // color: $color-text;
   margin: 0;
   padding-left: 100px;
-}
-.trip-top__block br {
-  display: none;
-}
-
-.trip-top__block {
-  width: 80%;
   position: relative;
-}
-
-.trip-top__block::before {
-  content: "";
-  border-top: 2px solid $color-text;
-  width: 66px;
-  top: 14px;
-  margin-bottom: 0;
-  float: left;
-  position: absolute;
-  margin-right: 29px;
 }
 
 .trip-top__button {
@@ -109,20 +79,59 @@ position: relative;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
-  padding: 19px;
+  padding: 18px;
   margin: 43px 100px 0;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
-.button-two {
-  display: none;
+/*@media (max-width: $desk-width-only-max) {
+  .trip-top__column {
+    padding-left: 150px;
+  }
+
+  .trip-top::before {
+    content: "";
+    width: 719px;
+    min-height: 628px;
+
+  }
+}*/
+
+@media (max-width: $desk-width-only-min) {
+  .trip-top {
+    margin-top: -75px;
+  }
+
+  .trip-top__column {
+    width: 55%;
+    padding-left: 150px;
+  }
+
+  .trip-top h1,
+  .trip-top p {
+    padding-left: 0;
+    max-width: 520px;
+  }
+
+  .trip-top::before {
+    content: "";
+    width: 530px;
+    min-height: 430px;
+    transform: translateX(-65px);
+    top: 200px;
+}
+
+.trip-top__button {
+margin-left: 0;
+}
 }
 
 @media (max-width: $tablet-width) {
   .trip-top {
     width: 100%;
-    top: -151px;
-    min-height: 789px;
+    margin-top: -72px;
+    padding-top: 45px;
+    min-height: 610px;
     background-image: url("../img/font-tablet.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -131,56 +140,52 @@ position: relative;
     }
   }
 
-  .trip-top__block::before {
+  .trip-top::before {
     content: "";
-    width: 32px;
-    margin-right: 21px;
-  }
-
-  .trip-top::after {
-    content: "";
-    width: 320px;
-    min-height: 430px;
-    // background-image: url("../img/card-tablet.png");
-    top: 146px;
-    transform: translateX(20%);
-    right: 0;
+    width: 319px;
+    min-height: 431px;
+    background-image: url("../img/card-tablet.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //  background-image: url("../img/card-tablet2.png");
+      background-image: url("../img/card-tablet2.png");
       background-size: cover;
     }
   }
 
-  .trip-top__container {
-    width: 53%;
-    left: 89px;
-    top: 291px;
+  .trip-top__column {
+    width: 67%;
+    padding-left: 88px;
+    top: 120px;
   }
 
-  .trip-top__container p {
-    width: 100%;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  /* .trip-top__one::before {
+  .trip-top__column p::before {
     content: "";
-    width: 33px;
-    top: 14px;
-    margin-bottom: 0;
-    float: left;
-    position: relative;
-    margin-right: 17px;
+    width: 32px;
+    left: 4px;
+    top: 17px;
   }
 
-  .trip-top__two {
-    padding-left: 50px;
-  }*/
-
-  .trip-top__container h1 {
+  .trip-top h1 {
+    max-width: 720px;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 70.31px;
+    padding-top: 18px;
+    margin-bottom: 27px;
+  }
+
+  .trip-top p {
+    max-width: 387px;
+    font-size: 18px;
+    line-height: 30.5px;
+    padding-left: 51px;
+  }
+
+  .trip-top__button {
+    width: 379px;
+
+    padding: 18px;
+    margin: 54px 50px 0;
+    letter-spacing: 0.02em;
   }
 }
 

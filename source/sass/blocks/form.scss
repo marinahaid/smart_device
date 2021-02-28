@@ -1,47 +1,32 @@
 .form {
   margin: 0 auto;
   background-color: $color-blue;
-  padding-bottom: 41px;
+  padding-bottom: 53px;
 }
 
 .form__container {
   width: 100%;
-  padding-right: 375px;
-  padding-left: 196px;
-  max-width: 1920px;
+  max-width: 1528px;
   margin: 0 auto;
-  position: relative;
+  display: flex;
 }
 
-.form__popup::before {
-  content: "";
+.form__image {
+  padding-top: 72px;
+}
+
+.form__img {
   display: block;
-  position: absolute;
-  width: 666px;
-  min-height: 518px;
-  background-image: url(../img/air-desk.png);
- 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  left: 0;
-
-  top: 60px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/air-desk2.png");
-    background-size: cover;
-  }
+  width: 100%;
 }
 
 .form__popup {
   width: 569px;
   color: #ffffff;
-  padding: 44px 0 59px 0;
+  padding: 44px 0 59px 80px;
   background-color: $color-blue;
   overflow: hidden;
   border: none;
- 
 }
 
 .form * {
@@ -71,6 +56,8 @@
 .form__popup h3 {
   width: 100%;
   font-size: 36px;
+  line-height: 50.63px;
+  font-weight: 400;
   margin: 0;
   padding-top: 32px;
 }
@@ -217,6 +204,17 @@ textarea {
   opacity: 0.5;
 }
 
+@media (max-width: $desk-width-only-min) {
+  .form__image {
+    display: none;
+  }
+
+  .form__popup {
+    margin: 0 auto;
+    padding-left: 0;
+}
+}
+
 @media (max-width: $tablet-width) {
   .form {
     padding-bottom: 43px;
@@ -234,7 +232,7 @@ textarea {
     width: 87%;
     font-weight: 400;
     font-size: 32px;
-    line-height: 13.62px;
+    line-height: 45px;
     margin-top: 0;
   }
 
